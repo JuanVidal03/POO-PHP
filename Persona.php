@@ -1,5 +1,4 @@
 <?php
-
 // inicializando la clase
 class Persona {
     /*
@@ -33,34 +32,3 @@ class Persona {
     }
 
 }
-
-/*========================
-HERENCIA
-========================*/
-// aqui estamos heredando los atributos y los metodos de la clase Persona
-class Alumno extends Persona{
-
-    public string $clase = "Alumno";
-
-    // metodo para saber si el alumno es graduado o no
-    public function saberSiEsgraduado(){
-        
-        if ($this->edad >= 17) {
-            $texto = $this->nombre." ya deberia haberse graduado del colegio.";     
-        } else {
-            $texto = $this->nombre." aun está estudiando.";
-        }
-
-        return $texto;
-    }
-
-}
-
-// creancion de instancias
-$carlos = new Persona("Carlos", 56);
-echo $carlos->saludar();
-
-echo "<br>";
-
-$juan = new Alumno("Juan Vidal", 17);
-echo $juan->saberSiEsgraduado();
