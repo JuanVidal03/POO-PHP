@@ -2,16 +2,23 @@
 
 // inicializando la clase
 class Persona {
+    /*
+        // se le da un valor por defecto
+        public string $nombre;
+        public int $edad;
 
-    // se le da un valor por defecto
-    public string $nombre;
-    public int $edad;
+        // constructor
+        public function __construct(string $nombre, int $edad){
+            $this->nombre = $nombre;
+            $this->edad = $edad;
+        }
+    */
 
-    // constructor
-    public function __construct(string $nombre, int $edad){
-        $this->nombre = $nombre;
-        $this->edad = $edad;
-    }
+    //nueva manera de declarar el constructor desde PHP 8
+    public function __construct(
+        public string $nombre,
+        public int $edad
+    ){}
 
     // metodo de saludar
     public function saludar():string{
