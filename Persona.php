@@ -24,9 +24,3 @@ class Persona {
     }
 
 }
-
-
-// creando una instancia de la clase
-$carlos = new Persona("Carlos" , 56);
-// accediendo a los atributos y metodos
-echo $carlos->saludar();
