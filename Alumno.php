@@ -12,7 +12,7 @@ class Alumno extends Persona{
     public function saberSiEsgraduado(){
         
         if ($this->edad >= 17) {
-            $texto = $this->nombre." ya deberia haberse graduado del colegio.";     
+            $texto = $this->nombre." ya deberia haberse graduado del colegio.";
         } else {
             $texto = $this->nombre." aun está estudiando.";
         }
